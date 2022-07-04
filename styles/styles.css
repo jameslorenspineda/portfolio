@@ -195,7 +195,7 @@ section {
 .header-content .right-header .name span {
   color: var(--color-secondary);
 }
-.header-content .right-header .name p {
+.header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
 }
@@ -234,7 +234,37 @@ section {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: all 0.4s ease-out;
   z-index: -1;
+}
+.main-btn:hover::before {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  transform: translateX(0);
+}
+
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.main-title h2 span {
+  color: var(--color-secondary);
+}
+.main-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-5);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 6.3rem;
 }/*# sourceMappingURL=styles.css.map */
